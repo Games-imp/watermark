@@ -1,2 +1,2 @@
 # watermark
-different ways to implement on web
+Different ways to implement on web
