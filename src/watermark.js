@@ -6,7 +6,8 @@
     props: {
       baseCls: "bi-watermark",
       watermark: {},
-      angle: 20 // 水印倾斜度数
+      angle: 20, // 水印倾斜度数
+      test: "123"
     },
 
     mounted: function() {

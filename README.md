@@ -2,8 +2,6 @@
 
 Different ways to implement watermark on web
 
-1. Origin JS
+1. DIV
 
 2. Canvas
-
-3. Fineui
