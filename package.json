@@ -1,0 +1,36 @@
+{
+  "name": "watermark",
+  "version": "1.0.0",
+  "description": "watermark web",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "test",
+    "build": "webpack",
+    "start": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Games-imp/watermark.git"
+  },
+  "keywords": [
+    "watermark",
+    "canvas"
+  ],
+  "author": "imp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Games-imp/watermark/issues"
+  },
+  "homepage": "https://github.com/Games-imp/watermark#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

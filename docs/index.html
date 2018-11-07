@@ -5,12 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Watermark123</title>
+    <title>Wtaermark</title>
 </head>
 
 <body>
-    <canvas id="watermark-canvas" style="width: 500px; height: 500px"></canvas>
-    <script src="../src/watermark.canvas.js"></script>
+    <canvas id="watermark-canvas"></canvas>
+    <script src="watermark.canvas.js"></script>
+    <!-- <script src="watermark.js"></script> -->
+    <script>
+        paintWaterMark(document.getElementById("watermark-canvas"), {
+            width: 500,
+            height: 500,
+            text: "watermark",
+            fontSize: 20,
+            fontFamily:
+                "Microsoft YaHei, PingFangSC-Light, SimHei, SimSun, FangSong, KaiTi, Arial, Tahoma, Verdana, Times New Roman",
+            color: "#333333",
+            opacity: 0.1,
+            angle: 20
+        });
+    </script>
 </body>
 
 </html>
