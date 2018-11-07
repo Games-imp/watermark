@@ -1,5 +1,6 @@
 /**
  * Created by astronaut007 on 2018/10/23
+ * fineui 写法 https://github.com/fanruan/fineui
  */
 !(function() {
   var WaterMark = BI.inherit(BI.Widget, {
