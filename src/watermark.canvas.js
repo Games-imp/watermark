@@ -1,5 +1,6 @@
 !(function() {
-  var paintWaterMark = function(canvas, conf) {
+  var paintWaterMark = function(conf) {
+    var canvas = document.getElementById("watermark-canvas");
     var markConfig = {
       text: "watermark",
       fontSize: 16,
@@ -54,14 +55,14 @@
 
   var getTextSizeWidth = function(text, fontSize) {
     var body = document.getElementsByTagName("body")[0];
-    var span = document.createElement("<span></span>");
-    body.appendChild();
+    var span = document.createElement("span");
+    body.appendChild(span);
 
     if (fontSize == null) {
       fontSize = 12;
     }
     fontSize = fontSize + "px";
-    span.innerText(text);
+    span.innerText = text;
     span.style.fontSize = fontSize;
 
     var width = span.offsetWidth;
@@ -71,8 +72,8 @@
 
   var getTextSizeHeight = function(text, fontSize) {
     var body = document.getElementsByTagName("body")[0];
-    var span = document.createElement("<span></span>");
-    body.appendChild();
+    var span = document.createElement("span");
+    body.appendChild(span);
 
     if (fontSize == null) {
       fontSize = 12;
@@ -85,4 +86,6 @@
     body.removeChild(span);
     return height;
   };
+
+  paintWaterMark({});
 })();
